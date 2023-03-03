@@ -1,0 +1,47 @@
+    /* ====== Navigation colors ====== */
+    
+     :root {
+        /* ====== Navigation Background ====== */
+        --body-color: #e4e9f7;
+        --background-sidebar: #0B1929;
+        --background-sidebar-hover: #1D2851;
+        /* ====== Navigation Input ====== */
+        --input-background-sidebar: #3C4754;
+        --input-color-sidebar: #A79494;
+        /* ====== Navigation Icon ====== */
+        --icon-color-sidebar: #9747FF;
+        --icon-color-body: #545454;
+        /* ====== Navigation Text ====== */
+        --white-color: #FFFFFF;
+        --black-color: #000000;
+        --text-color-primary: #404040;
+        --text-color-secondary: #A08A8A;
+        --title-color-sidebar: #707070;
+        --succes-color: #49D319;
+        --warn-color: #F44336;
+    }
+    
+    .primary {
+        color: var(--background-sidebar);
+        background-color: var(--background-sidebar);
+    }
+    
+    .primary-hover {
+        color: var(--background-sidebar-hover);
+        background-color: var(--background-sidebar-hover);
+    }
+    
+    .secondary {
+        color: var(--text-color-secondary);
+        background-color: var( --text-color-secondary);
+    }
+    
+    .secondary-hover {
+        color: var(--title-color-sidebar);
+        background-color: var( --title-color-sidebar);
+    }
+    
+    .tertiary {
+        color: var( --icon-color-sidebar);
+        background-color: var( --icon-color-sidebar);
+    }

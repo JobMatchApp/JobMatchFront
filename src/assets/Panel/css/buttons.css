@@ -1,0 +1,238 @@
+.btn-primary {
+    color: var(--white-color);
+    background-color: var( --icon-color-sidebar);
+    padding: 10px 25px;
+    border-radius: 40px;
+    margin: 10px 10px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: var(--tran-02);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+    transform: scale(1.04);
+    transition: var(--tran-05);
+}
+
+.btn-secondary {
+    background-color: var( --white-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--tran-02);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary:hover {
+    transform: scale(1.04);
+    transition: var(--tran-02);
+}
+
+.btn-tertiary {
+    color: var(--white-color);
+    background-color: var( --background-sidebar);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--tran-02);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-tertiary:hover {
+    transform: scale(1.04);
+    transition: var(--tran-02);
+}
+
+.btn-succes {
+    color: var(--white-color);
+    background-color: var( --succes-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--tran-02);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-succes:hover {
+    transform: scale(1.04);
+    transition: var(--tran-02);
+}
+
+.btn-warn {
+    color: var(--white-color);
+    background-color: var( --warn-color);
+    padding: 10px 25px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: var(--tran-02);
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-warn:hover {
+    transform: scale(1.04);
+    transition: var(--tran-02);
+}
+
+
+/* animation */
+
+
+/* 
+.btn-primary:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px var( --icon-color-sidebar);
+}
+
+.btn-primary:active:after {
+    box-shadow: 0 0 0 0 var(--icon-color-sidebar);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-primary:active {
+    top: 1px;
+}
+
+.btn-secondary:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px var( --text-color-secondary);
+}
+
+.btn-secondary:active:after {
+    box-shadow: 0 0 0 0 var( --text-color-secondary);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-secondary:active {
+    top: 1px;
+}
+
+.btn-tertiary:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px var(--background-sidebar);
+}
+
+.btn-tertiary:active:after {
+    box-shadow: 0 0 0 0 var( --background-sidebar);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-tertiary:active {
+    top: 1px;
+}
+
+.btn-succes:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px var(--succes-color);
+}
+
+.btn-succes:active:after {
+    box-shadow: 0 0 0 0 var(--succes-color);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-succes:active {
+    top: 1px;
+}
+
+.btn-warn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 20px var(--warn-color);
+}
+
+.btn-warn:active:after {
+    box-shadow: 0 0 0 0 var(--warn-color);
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.btn-warn:active {
+    top: 1px;
+} */

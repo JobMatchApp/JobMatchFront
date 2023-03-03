@@ -1,0 +1,62 @@
+        /* ====== Content Text ====== */
+        
+        .cat-header {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        .cat-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .cat-strong {
+            font-weight: 600;
+        }
+        
+        .cat-stronger {
+            font-weight: 700;
+        }
+        
+        .cat-worse {
+            font-weight: 800;
+        }
+        
+        .cat-description {
+            font-size: 14px;
+        }
+        
+        .cat-description-strong {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .cat-description-stronger {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        .cat-description-worse {
+            font-size: 14px;
+            font-weight: 800;
+        }
+        
+        .cat-display-1 {
+            font-size: 22px;
+        }
+        
+        .cat-display-2 {
+            font-size: 26px;
+        }
+        
+        .cat-display-3 {
+            font-size: 28px;
+        }
+        
+        .cat-display-4 {
+            font-size: 32px;
+        }
+        
+        .cat-display-5 {
+            font-size: 48px;
+        }

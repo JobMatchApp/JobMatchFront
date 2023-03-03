@@ -1,0 +1,67 @@
+<!-- La navigation de la barre de menu horizontal -->
+
+<section class="content {{ resizeNavBar() }}">
+    <!-- La navigation des modules -->
+    <section class="bar-module ">
+
+    </section>
+
+
+    <!-- FIN de la navigation des modules -->
+    <section class="horizontal-menu  ">
+        <div class="content-menu-title ">
+            <p>module <strong>Page</strong></p>
+            <p> Active</p>
+        </div>
+
+        <div class="content-menu-icon ">
+            <div>
+                <!-- ICON DE RECHERCHE -->
+                <button mat-icon-button=" " type="button">
+                    <mat-icon svgicon="mat:bookmarks ">
+                        <svg>
+                            <path
+                                d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z ">
+                            </path>
+                        </svg>
+                    </mat-icon>
+                </button>
+
+                <!-- ICON NOTIFICATION DU CALENDRIER-->
+                <button mat-icon-button=" " type="button">
+                    <mat-icon svgicon="mat:bookmarks ">
+                        <svg>
+                            <path d="M12 6.5c-2.49 0-4 2.02-4 4.5v6h8v-6c0-2.48-1.51-4.5-4-4.5z " opacity=".3 "></path>
+                            <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64
+                        5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2v-5zm-2 6H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6zM7.58 4.08 6.15 2.65C3.75 4.48 2.17 7.3 2.03 10.5h2a8.445 8.445 0 0 1 3.55-6.42zm12.39 6.42h2c-.15-3.2-1.73-6.02-4.12-7.85l-1.42 1.43a8.495 8.495
+                        0 0 1 3.54 6.42z "></path>
+                        </svg>
+                    </mat-icon>
+                </button>
+
+                <!-- ICON TODOLIST -->
+                <button mat-icon-button=" " type="button ">
+                    <mat-icon svgicon="mat:bookmarks ">
+                        <svg>
+                            <path
+                                d="M19 1H8.99C7.89 1 7 1.9 7 3h10c1.1 0 2 .9 2 2v13l2 1V3c0-1.1-.9-2-2-2zm-4 4H5c-1.1 0-2 .9-2 2v16l7-3 7 3V7c0-1.1-.9-2-2-2zm0 14.97-4.21-1.81-.79-.34-.79.34L5 19.97V7h10v12.97z ">
+                            </path>
+                            <path d="m5 19.97 5-2.15 5
+                        2.15V7H5z " opacity=".3 "></path>
+                        </svg>
+                    </mat-icon>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="main">
+
+        <router-outlet name='nav'></router-outlet>
+
+    </section>
+
+    <!-- Footer -->
+    <!-- <app-footer></app-footer> -->
+</section>
