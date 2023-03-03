@@ -1,0 +1,101 @@
+    /* ----- Menu :horizontal ------ */
+    
+    .content {
+        margin-left: 280px;
+        transition: var(--tran-05);
+    }
+    
+    .content-module.active {
+        background-color: var(--icon-color-sidebar);
+        transition: var(--tran-05);
+    }
+    
+    .content.close {
+        transition: var(--tran-05);
+        margin-left: 88px;
+    }
+    
+    .bar-module {
+        display: flex;
+        flex-direction: row;
+        background-color: var(--background-sidebar);
+        color: var(--white-color);
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 3px;
+    }
+    
+    .content-module {
+        font-size: 14px;
+        text-align: center;
+        margin: 0px;
+        background: var(--background-sidebar-hover);
+        width: auto;
+        flex-grow: 1;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .content-module:hover {
+        transition: var(--tran-05);
+        background-color: var(--icon-color-sidebar);
+        cursor: pointer;
+    }
+    
+    .horizontal-menu {
+        background-color: var(--white-color);
+        height: 60px;
+        box-shadow: 0px -15px 40px rgba(0, 0, 0, 0.25);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+        padding: 0px 40px
+    }
+    
+    .content-menu-title {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .content-menu-title p:nth-child(2) {
+        padding-left: 20px;
+        font-weight: 550;
+        color: var(--input-color-sidebar);
+    }
+    
+    .content-menu-title strong {
+        text-align: center;
+        padding-right: 20px;
+        border-right: 0.5px solid var(--input-color-sidebar);
+    }
+    
+    mat-icon {
+        color: var(--icon-color-sidebar);
+    }
+    
+    .main {
+        height: 85vh;
+        padding: 30px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    .main::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 8px;
+        background-color: transparent;
+    }
+    
+    .main::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-color: var(--background-sidebar);
+    }
+    /* --- FOOTER CHILDREN --- */
+    /* app-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: transparent;
+    } */

@@ -1,0 +1,192 @@
+<!-- === NAV-BAR-COMPONENT-CHILDREN === -->
+<app-nav-bar [set_toggle]="toggle"></app-nav-bar>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<!-- === SIDE-BAR-COMPONENT-PARENT === -->
+<nav class="sidebar {{ toggleNav() }}">
+    <header>
+
+        <div class="image-text ">
+            <span class="image ">
+                <img class="img-logo {{ toggleNav()}}" src="assets/Panel/image/logo/logo.svg " width="120px">
+            </span>
+            <!-- <div class="logo-text ">
+                <span class="title ">New ERP</span>
+            </div> --><i class='toggle material-icons md-18' type="button" (click)="togggle()">{{ iconToggle }}</i>
+        </div>
+
+
+        <div class="menu-header ">
+            <li class="search-box ">
+                <i class="material-icons md-18 ">search</i>
+                <input type="text " placeholder="Recherche... ">
+            </li>
+        </div>
+    </header>
+
+    <div class="menu-bar">
+        <div class="menu">
+
+            <div class="menu">
+                <!-- Modification de la branche Domaines/elements -->
+                <!-- ANALITYCS -->
+                <p class="sidebar-title ">TABLE</p>
+                <ul class="menu-links" routerLinkActive="active">
+                    <li>
+                        <a>
+                            <i class="material-icons md-18 ">table_chart</i>
+                            <span class="text">Table CRUD</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu-links " routerLinkActive="active">
+                    <li>
+                        <a>
+                            <i class="material-icons md-18 ">table_chart</i>
+                            <span class="text">Table Show1</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-links " routerLinkActive="active">
+                    <li>
+                        <a>
+                            <i class="material-icons md-18 ">table_chart</i>
+                            <span class="text">Table Show2</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu-links " routerLinkActive="active">
+                    <li>
+                        <a>
+                            <i class="material-icons md-18 ">table_chart</i>
+                            <span class="text">Table Show3</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+                <!-- UNIVERS MENU DES MODULES -->
+
+
+                <p class=" sidebar-title ">UI Elements</p>
+                <ul class="menu-links " routerLinkActive="active">
+                    <li class="">
+                        <div class="iocn-link">
+                            <a>
+                                <i class="material-icons md-18 ">format_color_fill</i>
+                                <span class="text">Components</span>
+                            </a>
+                            <i class="material-icons arrow index-arrow">keyboard_arrow_right</i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a>Typographie</a></li>
+                            <li><a>Couleurs</a></li>
+                            <li><a>Boutons</a></li>
+                            <li><a>CheckBox</a></li>
+                            <li><a>Dialogs</a></li>
+                            <li><a>Input</a></li>
+                            <li><a>Lists</a></li>
+                            <li><a>Menu</a></li>
+                            <li><a>Progress</a></li>
+                            <li><a>SnackBar</a></li>
+                            <li><a>Tooltip</a></li>
+                            <li><a>Badge</a></li>
+                            <li><a href="https://www.angularjswiki.com/angular/angular-material-icons-list-mat-icon-list/" target="_blank">Material Icon</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <ul class="menu-links ">
+                    <li class="">
+                        <div class="iocn-link">
+                            <a>
+                                <i class="material-icons md-18 ">chrome_reader_mode</i>
+                                <span class="text">Pages </span>
+                            </a>
+                            <i class="material-icons arrow index-arrow">keyboard_arrow_right</i>
+                        </div>
+                        <ul class="sub-menu">
+                            <li><a routerLinkActive="active">404</a>
+                            </li>
+                            <li><a routerLinkActive="active">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+                <!--FIN UNIVERS MENU DES MODULES -->
+
+
+                <!-- LES OUTILS -->
+                <p class=" sidebar-title ">Documentation</p>
+                <ul class="menu-links ">
+                    <li routerLinkActive="active">
+                        <a>
+                            <i class="material-icons md-18 ">book</i>
+                            <span class="text ">Documentation</span>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active">
+                        <a>
+                            <i class="material-icons md-18 ">book</i>
+                            <span class="text ">Logs</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="image-end-sidebar ">
+                <img class=" {{ toggleNav() }}" src="assets/Panel/image/logo/logo-end-sidebar.svg ">
+            </div>
+
+
+        </div>
+
+
+
+
+        <!-- FOOTER ADMIN PROFIL -->
+        <div class="bottom-content" mat-icon-button [matMenuTriggerFor]="menu">
+            <li class="mode">
+                <img class="img-admin" src=" assets/Panel/image/logo/commercial-demo.png " width="50px " alt=" ">
+                <div class="title-admin ">
+                    <span>Thomas Gouspin</span>
+                    <span>Product Manager</span>
+                </div>
+
+                <div class="toggle-menu-admin ">
+                    <button>
+                        <mat-icon>arrow_drop_up</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>person_outline</mat-icon>
+                            <span>Mon profil</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>settings</mat-icon>
+                            <span>Paramétre</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>power_settings_new</mat-icon>
+                            <span>Se déconnecter</span>
+                        </button>
+                    </mat-menu>
+                </div>
+
+            </li>
+        </div>
+
+    </div>
+
+</nav>

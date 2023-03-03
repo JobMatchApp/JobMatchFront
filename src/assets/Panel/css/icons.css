@@ -1,0 +1,10 @@
+.mat-mdc-checkbox.mat-accent {
+    --mdc-checkbox-selected-checkmark-color: #fff;
+    --mdc-checkbox-selected-focus-icon-color: var( --icon-color-sidebar: );
+    --mdc-checkbox-selected-hover-icon-color: var( --icon-color-sidebar: );
+    --mdc-checkbox-selected-icon-color: var( --icon-color-sidebar: );
+    --mdc-checkbox-selected-pressed-icon-color: var( --background-sidebar-hover);
+    --mdc-checkbox-unselected-focus-icon-color: var(--background-sidebar);
+    --mdc-checkbox-unselected-hover-icon-color: var(--background-sidebar);
+    --mdc-checkbox-disabled-selected-icon-color: var(--text-color-secondary);
+}
